@@ -1,0 +1,15 @@
+# Print n to 1 using backtracking
+
+
+def printNum(i,n):
+    if i > n:
+        return
+    printNum(i+1,n)
+    print(i)
+
+def main():
+    n = int(input("enter number"))
+    i = 1
+    printNum(i,n)
+
+main()
